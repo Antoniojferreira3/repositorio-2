@@ -4,62 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devnoiteee</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilização da navbar */
+        .navbar {
+            background-color: #333; /* Cor de fundo escura para a navbar */
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .navbar .navbar-toggler {
+            display: none; /* Oculta o botão de toggle */
+        }
+
+        /* Layout e espaçamento do conteúdo */
+        body {
+            padding-top: 60px; /* Espaço para a navbar fixa */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 10px 0;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
 
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <a href="#">Home</a>
+        <a href="#">Link</a>
+        <a href="#">Dropdown</a>
+        <a href="#">Disabled</a>
+        <form style="display: inline;">
+            <input type="search" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
 
-    <nav class="-expand-lg bg-body-tertiary">
+    <div class="container">
+        <h1>Olá,</h1>
+        <h1>Sou Antonio Jacinto Ferreira</h1>
+        <h2>Aluno Senai</h2>
+        <h3>Curso Desenvolvimento de Sistemas</h3>
+        <h4>Corretor de imóveis</h4>
 
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+        <img src="img/casa.jpeg" alt="Casa 1" width="300" height="200">
+        <img src="img/casa2.jpeg" alt="Casa 2" width="300" height="200">
 
-   <h1> Olá,</h1>
-<h1>Sou Antonio Jacinto Ferreira</h1>
-<h2>Aluno Senai</h2>
-<h3>Curso Desenvolvimento de Sistemas</h3>
-<h4>Corretor de imóveis</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae impedit consequatur enim doloremque aut officia adipisci alias minima nulla nemo est deleniti tempore illo omnis, numquam praesentium beatae sed consequuntur?</p>
+    </div>
 
-<img src="img/casa.jpeg" alt="" width="300" height="200">
-
-<img src="img/casa2.jpeg" alt="" width="300" height="200">
-
-
-<p>
-
-</p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae impedit consequatur enim doloremque aut officia adipisci alias minima nulla nemo est deleniti tempore illo omnis, numquam praesentium beatae sed consequuntur?
-<5></5>
 </body>
-</html> 
+</html>
