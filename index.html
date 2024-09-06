@@ -7,25 +7,28 @@
     <style>
         /* Reset básico */
         * {
-            margin: 10;
-            padding: 10;
+            margin: 0; /* Corrige o valor do reset */
+            padding: 0; /* Corrige o valor do reset */
             box-sizing: border-box;
         }
 
         /* Estilização da navbar */
         .navbar {
-            background-color: #d5a110; /* Cor de fundo escura para a navbar */
+            background-color: #d8b556; /* Cor de fundo escura para a navbar */
             color: white;
-            padding: 50px 60px;
+            padding: 10px 60px; /* Reduzido para melhor espaçamento */
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .navbar a {
-            color: rgb(129, 13, 13);
+            color: rgb(137, 5, 5);
             text-decoration: none;
             margin-right: 15px;
         }
@@ -37,6 +40,26 @@
         .navbar .navbar-brand {
             font-weight: bold;
             font-size: 1.5em;
+        }
+
+        .navbar .navbar-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .navbar-buttons button {
+            background-color: rgb(129, 13, 13); /* Cor de fundo para os botões */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .navbar .navbar-buttons button:hover {
+            background-color: #a03b3b; /* Cor de fundo ao passar o mouse */
         }
 
         .navbar .navbar-toggler {
@@ -67,10 +90,12 @@
 
     <nav class="navbar">
         <a href="#" class="navbar-brand">Seu Novo Imóvel</a>
-        <a href="#">Quem Somos</a>
-        <a href="#">Comprar</a>
-        <a href="#">Lançamentos</a>
-        <a href="#">Visualizar Todos</a>
+        <div class="navbar-buttons">
+            <button onclick="location.href='#'">Quem Somos</button>
+            <button onclick="location.href='#'">Comprar</button>
+            <button onclick="location.href='#'">Lançamentos</button>
+            <button onclick="location.href='#'">Visualizar Todos</button>
+        </div>
         <form style="display: inline;">
             <input type="search" placeholder="Search">
             <button type="submit">Search</button>
