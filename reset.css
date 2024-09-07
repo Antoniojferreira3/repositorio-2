@@ -1,0 +1,6 @@
+        /* Reset básico */
+        * {
+            margin: 0; /* Corrige o valor do reset */
+            padding: 0; /* Corrige o valor do reset */
+            box-sizing: border-box;
+        }
