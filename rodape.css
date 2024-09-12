@@ -1,15 +1,15 @@
 /* Reset básico para garantir que o estilo seja consistente em diferentes navegadores */
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+    margin: 0; /* Remove a margem padrão do body e do html para evitar espaço extra */
+    padding: 0; /* Remove o padding padrão do body e do html para evitar espaço extra */
+    height: 100%; /* Garante que o body e o html ocupem 100% da altura da tela */
+    }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    position: fixed; /*mantém o rodapé na parte inferior da tela, independentemente do rolar da página*/
+    bottom: 0; /*posiciona o rodapé na parte inferior*/
+    width: 100%;/*faz com que o rodapé ocupe toda a largura da tela*/
+    text-align: center;/*centraliza o texto dentro do rodapé*/
     background-color: #f1f1f1; /* Cor de fundo opcional */
     padding: 10px; /* Espaçamento interno opcional */
     font-size: 14px; /* Tamanho da fonte opcional */
